@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+<!-- 
+    can you create a dashboard section with a profile section, products, category menu and a checkout section .
+In the profile section include an image of the user and a brief description about themself. The image should be placed
+in the center with a border around and the name should be right down.
+
+    can you create an array of products include  each product should have an image, name, price ,id ,class,three word description and an
+    add to cart button such that one can add the products into a cart section, the products copied into the cart should
+    include the image , name and price of the product selected . In the cart section include a pay button that when clicked
+    directs the user to a payment page that will include all the information in the cart section and a form to collect the
+    users telephone number and email and store the info taken in an array.
+    in the category section, create a categories of product
+    s  like electronics, clothing ,Hardware,.and filter the  products based on the .
+
+    in the products section 
+    Use Javascript -->
+    <div class="logo"><img src="image/logo.png" alt="Logo"></div>
+    <div id="Search">
+        <input type="text" class="search" placeholder="Search....">
+    </div>
+    <div class="profile">
+        <div id="notification"> 
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAACBElEQVR4nO2ayytEURzHPx6JhI1CHjt2/gdLNpJiQbGwE2Vlw59gxUrIQlkIWciKkgUlG1mQ50JSXnktEHN16ndLNzPuPM655477qW9Nd+6c8/vMOfc1Z0A/ncC1pIMs4BpwJOp16HE8CT1ONghVAQPA8i9Cy/Ke2sd6qoBp4O0XEW/UPlM2i7UDdz5EvLkF2rCMPuArBRk3MaAfi0YmlobMT6nAR6oWuM+AjBs1ZauDFJrNoIwbdaIIhDrgQ4PQO1AThNCQBhk3g0EIrWkUWg1C6Fyj0EkQQq8ahVTbxnE0JxKKRshDNOWIjiGzRFOOaMqZJaumXJMBIdWHEcqBUwNCF0CFbpkyYNeAjJtd6VMLxcCWQRk3O0CpDpnNAGQcyTZQEvaR8WZLakmLAs2P2slmHShMVSYPWLBAwvFkBchPViYHmLGgeCdO5oDcZITGLCj6r6gafdGaod+qdScmtf7JiQXF+s2xH6ErCwr1m0s/Qt1prvWYyhfQhU9agCMLinbi5BBoJknUub4X2AA+LZD4lAtrTyrXIS+VIjcJHBiakqqPA+mzV2rQRhHQKMuRw8AEMC+juQ+cycreA/Dyo8gX2XYn++zLt64+Oy5ttUvbKd/iRPxXRoG9OBkhhNwmOOBvCCHPCYQeCSFLCYQWCSENcf6UobbVE1Jq5Kn3SaJGRqvMN9Lab98vNDyEAAAAAElFTkSuQmCC">
+            <span>5</span>
+        </div>
+        <div id="profile_info">
+            <div>
+                <img src="../food/image/Screenshot (29).png" alt="#">
+            </div>
+
+            <span>Isaac Mwalimu</span>
+        </div>
+
+    </div>
+    <main>
+
+        <nav class="adv_top">
+            <div class="text_adv">
+                <h3>Lorem ipsum dolor sit amet.
+                </h3>
+                <h4>Lorem ipsum dolor sit adipisicing elit. Possimus, architecto?</h4>
+            </div>
+
+            <div class="img_adv">
+                <img src="../food/image/54018-9-grocery-free-hq-image-thumb.png" alt="#">
+            </div>
+            <div class="orderNow">Order now</div>
+        </nav>
+
+        <div class="listMenu">
+            <ul>
+
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnUlEQVR4nO2WzSsFURjGfyRSvlIsZGHHRtnYKQul7OzYsbK240+wtbS1UkpKllIXKZGVjWxsJFKU7sLXq6lzbtPp3u7MNXfOmbxPPTU1zTnv733nPDOgSqQR4Ng4ui6k5oAXQIxfgXkKpBZgDfiOQVj/ABtAK4GrB9irAuD6EOgnUE0AdwkgrO+BSWcNqeHctASUU0BYl82zVqvAhw+QDmCzAQDX20CnWXMKeMgTZBg4zwDC+ioW0QPAUR4g08BjhhDWz8Cs2aPNJFyUdE2L1q8mQFhHa6+bvSItZA3RDew2EcD1AdCXNcQYcJMjhBjfAuNZQSwC7x4gJBbRy38BsIdNAvEW0J4WYtCJv1B8Cgwlhaj2QQrJT8BMPYiVGr8IofnTfAZsRFfUBewEUKCk9D7QGwe5MDfeAihOEtrWGtVe0RlwDYwGUKAkdFTrJVCqdU6kIK4r3wWKgjjy3WnRiTjy3WnRiTjy3WkJYSJppSD47pJOBD0j6KuVQppa+O6STgRNLfTVSiFNLXx3SSfCP06tkwKAlBrYS6WiAf0C5nGBCW1kgjgAAAAASUVORK5CYII="><span
+                        class="title home">Home</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxElEQVR4nO2UPQrCQBBGX2FjYxC8gB5FvEsgN9BKcxsRVPAMWhtbhUCwt7FfWRhhkSROkk3hz4OvCTPvY5ck8GsYyecU9IEI2AGpU5DKs0hmKtMFYuDuSItiZxayo2IEJAqxeckRGGrk1xpyI8nKSuwRTw3kxjlJ7nXFHuRGMuerMC2H1guebD1K1+Qw8VgwpoCVB/mSEoKGH1sC9HjDADjUkO9lV0UHmAE3hdjOTGWnMgEQAhvgIr9mm7O8KaHmSv5QxgNmy+xW7EkHbQAAAABJRU5ErkJggg=="><span
+                        class='title'>food order</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoklEQVR4nO2UMQoCMRBFX2Vhabe93sX1NhaWttqJduI9xKNoq9t7hW8zwhYxYPYvWuyHB4EMeZBMBob8UxZAAyjBE1h2FXw6XC12wKRUIBMNUPcpEPDoW6BvBee4/ytwi/XFJdi0asbBO1uHoMo0RuUQTDOCmUNwzAhOrkdeJ+pXzi4ScABGwd7dpgrugf0fqICiYacuo6KODcfh85RgyG/yArY0/jQTAJRqAAAAAElFTkSuQmCC"><span
+                        class="title">Favourite order</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAARUlEQVR4nGNgGAUkgP9kYqLBqAVDP4j+E7J41IL/IyeI6olMdeiAKAvINZwoCxqGagYceAtIAeW0tgDZEpqCBlpbQD8AANe97AOp6RPsAAAAAElFTkSuQmCC"><span
+                        class="title">Messages</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAR0lEQVR4nGNgGG7gPxTbMDAw2FLAJ2gBpRgnGLXgPylBRCr4P+gs+D+aiiiNg/9o6gafBf+HfCTTPIgIgf+jcfB/SKaioQcAbXIg1KM3T6cAAAAASUVORK5CYII="><span
+                        class="title">order</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqklEQVR4nN2UzytEURTHP0YzJX+AoiQs2MjGBmtkZSY1Cwtky8paIzvNQqnZkkazs7VmlA3ZiKEZCYmymQgL+dGp8+qZ7jvvkZVTt3d793u+33PPPefAf7c4kAQKQAl4BapAGcgDacX8ykaBM+AzZFU0iMhWB2SAjwjk/pUFYlEEMgbJHVA0zpejpMWKfBsYCblJYLriITlfB1qBRmAeeA/ASQEkXAJJg7yo+W0BehW/YuDHXQIFw2FJMTktV7FBA7/pEigZDjnFTABvwCFwYuC9IL7Zs+HwADQrbgA4DnnoR5dANcTpVm8gfdIA7BvYJ5dAxXC4AS60ctYUP2bgz10CecOhXzHieK37PgO/4RJIGw6LvsoZ0v1sAFZuORzUaEFpegFmtIHqgZTmWUbHgq/p5DuFYamQh14F5nQv5N3qN63lK1+026WvOl0iWUOgDBzVkHvW4SPfVfyeSyCmUzFI5N5H3gNsKWkt+SXQZqUrqRHXCkzqufTDgf4T0qafkHuW0MEls+XU97Bdei4kQiak3iSITB7VZIRLEwr5FdD+l+SeScQ7rsi/AFf1EmaiheWbAAAAAElFTkSuQmCC"><span
+                        class="title">bill</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVR4nO2TMQ4BQRSGv0ShpHQGcQARoqPayyhdgERN5QZugCs4g1YpUah2n6y8KJjZnXkRmvmSV+3/3peZNwsJI1tAIusMNEKGd4C7QSBAFiJYaXgXceKZ9uzrgi3gquF+hKAN3LSvVxWca+hIPBvtXbs+LoExcNHQxCDoAoWeZKozn2Rvizph5+BaelNthfHliKcWOvuFfLk++LlgAAwDBvlytYKyaRQg8OX+f0WSBL4ryrGTh+yg/KOtSJUggYsHHrLxHB5ELGEAAAAASUVORK5CYII="><span
+                        class="title">Drive</span></li>
+                <li><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABAUlEQVR4nOWVQQrCMBBFn661ot5C96I30F2h2KV6Ak9Tt+rSI7kTFMEDqDutBEYoMYkGIyh+GCjtn//LTGYC/4IBcARyCfXcD2mwLIjfYxFKvA1sDAbqXctXrARkwApIgRlwNYjf4yqcVHIy0bBi4hDLX4yxTbwC7AMYHIDIZDB1JG2BBKhKxMDawVdaD+gBJ4t4w8CvyzedrzS6tjJ1gLOWkDh6NtS4Z9FwojhQuZTEhkjjqlxCGtR8DUwlih381KdEtiavpaE6msDOp8nPjulQah7Jn+98j+nHBw0Z83cNRjhQ1pZdBlwcYhfhFJed0vBCK+S6tmFhMJjzS1cmX4sbSsHWENa8dO8AAAAASUVORK5CYII="><span
+                        class="title">Settings</span></li>
+
+            </ul>
+
+            <div class="recipe">
+
+                <img src="../food/image/56181-7-kebab-png-free-photo-thumb.png" alt="">
+                <div id="upload_recipe">
+                    <h1>Share your own recipe</h1>
+                    <button>upload now</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="categories">
+            <h1>categories</h1>
+            <div class="category"> <img src="../food/image/56181-7-kebab-png-free-photo-thumb.png" alt="#">
+                <span>groceries</span>
+            </div>
+
+            <div class="category"> <img src="../food/image/56181-7-kebab-png-free-photo-thumb.png" alt="#">
+                <span>groceries</span>
+            </div>
+            <div class="category"> <img src="../food/image/56181-7-kebab-png-free-photo-thumb.png" alt="#">
+                <span>groceries</span>
+            </div>
+            <div class="category"> <img src="../food/image/56181-7-kebab-png-free-photo-thumb.png" alt="#">
+                <span>groceries</span>
+            </div>
+
+        </div>
+
+
+        </div>
+        </div>
+        <section class="list">
+        </section>
+    </main>
+    <div class="checkoutMenu">
+
+        <div class="totalOuter">
+            <div class="fancyBg">
+                <div class="totalBG">
+                    <h4>total:</h4><br>
+                    <div class="total">Ksh: 0.00</div>
+                </div>
+            </div>
+        </div>
+
+
+        <ul class="listCard"></ul>
+        <div class="checkout">
+
+
+        </div>
+
+<section id="profileMain">     <div class="profileMain">
+            <img src="../food/image/Screenshot (29).png" alt="#">
+            <span>profile</span>
+            <h3>more..</h3>
+        </div>
+</section>
+   
+
+</body>
+<script src="script.js"></script>
+
+</html>
